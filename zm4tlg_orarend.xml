@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<zm4tlg_orarend>
+    
+    <ora id="1" tipus="elmelet">
+        <kurzus>Szamitaselmelet</kurzus>
+        <idopont>
+            <nap>hetfo</nap>
+            <tol>10:00</tol>
+            <ig>13:00</ig>
+        </idopont>
+        <helyszin>online</helyszin>
+        <oktato>Dr. Veres Laura</oktato>
+        <szak>Programtervezo informatikus</szak>
+    </ora>
+
+	<ora id="2" tipus="elmelet">
+        <kurzus>Komputergrafika</kurzus>
+        <idopont>
+            <nap>Hetfo</nap>
+            <tol>14:00</tol>
+            <ig>15:30</ig>
+        </idopont>
+        <helyszin>online</helyszin>
+        <oktato>Fazekas Levente</oktato>
+        <szak>Programtervezo informatikus</szak>
+    </ora>
+
+	<ora id="3" tipus="gyakorlat">
+        <kurzus>Alkalmazas fejlesztes projet labor II.</kurzus>
+        <idopont>
+            <nap>szerda</nap>
+            <tol>10:00</tol>
+            <ig>13:00</ig>
+        </idopont>
+        <helyszin>Furmint</helyszin>
+        <oktato>Perlaki Attila</oktato>
+        <szak>Programtervezo informatikus</szak>
+    </ora>
+	
+	<ora id="4" tipus="gyakorlat">
+        <kurzus>Webkonyvtarak.</kurzus>
+        <idopont>
+            <nap>szerda</nap>
+            <tol>10:00</tol>
+            <ig>13:00</ig>
+        </idopont>
+        <helyszin>Furmint</helyszin>
+        <oktato>Dr Bednarik Laszlo</oktato>
+        <szak>Programtervezo informatikus</szak>
+    </ora>
+    
+    <ora id="5" tipus="elmelet">
+        <kurzus>Halozati architekturak</kurzus>
+        <idopont>
+            <nap>szerda</nap>
+            <tol>17:00</tol>
+            <ig>19:00</ig>
+        </idopont>
+        <helyszin>Furmint</helyszin>
+        <oktato>Janics Attila</oktato>
+        <szak>Programtervezo informatikus</szak>
+    </ora>
+    
+    <ora id="6" tipus="elmelet">
+        <kurzus>Valoszinusegszamitas</kurzus>
+        <idopont>
+            <nap>csutortok</nap>
+            <tol>8:00</tol>
+            <ig>11:15</ig>
+        </idopont>
+        <helyszin>Furmint</helyszin>
+        <oktato>Foldvari Attila</oktato>
+        <szak>Programtervezo informatikus</szak>
+    </ora>
+	
+	<ora id="7" tipus="gyakorlat">
+        <kurzus>Gamifikacio</kurzus>
+        <idopont>
+            <nap>csutortok</nap>
+            <tol>12:00</tol>
+            <ig>14:15</ig>
+        </idopont>
+        <helyszin>Furmint</helyszin>
+        <oktato>Perlaki Attila</oktato>
+        <szak>Programtervezo informatikus</szak>
+    </ora>
+    
+    <ora id="8" tipus="elmelet">
+        <kurzus>Forditoprogramok</kurzus>
+        <idopont>
+            <nap>csutortok</nap>
+            <tol>18:00</tol>
+            <ig>19:10</ig>
+        </idopont>
+        <helyszin>Furmint</helyszin>
+        <oktato> Dr. Csaszar Peter</oktato>
+        <szak>Programtervezo informatikus</szak>
+    </ora>
+	
+
+</zm4tlg_orarend>
