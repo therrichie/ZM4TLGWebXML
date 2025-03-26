@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<c_orarend xmlns:xsi="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="ZM4TLG_orarend.xsd">
+<ZM4TLG_orarend xmlns:xsi="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="ZM4TLG_orarend.xsd">
 	<ora id="01" típus="Elmelet">
 		<kurzus>Szamitaselmelet</kurzus>
 		<idopont>
