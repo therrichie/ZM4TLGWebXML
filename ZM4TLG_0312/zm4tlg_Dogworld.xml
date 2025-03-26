@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<konyvek>
+    <konyv isbn="083672762">
+        <cim> Kutyak</cim>
+        <szerzo> C. M .Shulz</szerzo>
+        <szereplo> 
+        	<nev> Basa</nev>
+        	<baratja> Betyar</baratja>
+        	<szuletett> 2021-02-02</szuletett>
+        	<jellemzes> extrovertalt</jellemzes>
+        </szereplo>
+
+		<szereplo> 
+        	<nev> Betyár</nev>
+        	<baratja> Betyar</baratja>
+        	<szuletett> 2022-08-02</szuletett>
+        	<jellemzes> vakmero</jellemzes>
+        </szereplo>
+          
+    </konyv>  
+</konyvek>
