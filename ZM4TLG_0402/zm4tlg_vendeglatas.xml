@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<vendeglatas>
+    
+    <etterem ekod="e1">
+        <nev>Trofea</nev>
+        <cim> 
+        	<varos> Budapest</varos>
+        	<utca> Kossuth utca</utca>
+        	<hazszam> 2</hazszam>
+        </cim>
+        <csillag> 4</csillag>
+    </etterem>  
+
+      <etterem ekod="e2">
+        <nev>Gundel</nev>
+        <cim> 
+        	<varos> Budapest</varos>
+        	<utca> Petőfi utca</utca>
+        	<hazszam> 2</hazszam>
+        </cim>
+        <csillag> 5</csillag>
+    </etterem>    
+    
+    <foszakacs fkod="f1" e_f=e1>
+        <nev>Havas Péter</nev>
+        <eletkor> 35</eletkor>
+        <vegzettseg> szakmai okj</vegzettseg>
+        <vegzettseg> Institute Paul Bosceu</vegzettseg>        
+    </foszakacs>    
+    
+       <foszakacs fkod="f2" e_f=e2>
+        <nev>Henrik Gábor</nev>
+        <eletkor> 35</eletkor>
+        <vegzettseg> szakmai okj</vegzettseg>
+    </foszakacs>    
+
+
+ 
+    
+    <szakacs szkod="sz1" e_f=e1>
+        <nev>Nagy Károly</nev>
+        <reszleg> desszert</reszleg>
+        <vegzettseg> La Cordon Bleu</vegzettseg>
+        <vegzettseg> La Royal Cheddar</vegzettseg>
+        <vegzettseg> La Nova Andoria</vegzettseg>
+    </szakacs> 
+    
+        <szakacs szkod="sz2" e_f=e1>
+        <nev>Nagy Miklos</nev>
+        <reszleg> tészták</reszleg>
+        <vegzettseg> La Cordon Bleu</vegzettseg>
+        <vegzettseg> La Royal Cheddar</vegzettseg>
+        <vegzettseg> La Nova Andoria</vegzettseg>
+    </szakacs> 
+        
+    
+        <gyakornok gykod="gy1" e_f=e1>
+        <nev>Kis Károly</nev>
+        <gyakorlat> 
+        	<kezdete> 2023.02.02.</kezdete>
+        	<idotartam> 4 hónap</idotartam>
+        	
+        </gyakorlat>
+        <muszak>délelőtt </muszak>
+        </gyakornok> 
+    
+        
+        <gyakornok gykod="gy1" e_f=e1>
+        <nev>Kis Mária</nev>
+        <gyakorlat> 
+        	<kezdete> 2023.03.02.</kezdete>
+        	<idotartam> 4 hónap</idotartam>
+        	
+        </gyakorlat>
+        <muszak>délután </muszak>
+       
+    	</gyakornok> 
+    	
+    	
+    	
+    	
+    	
+    	
+    	 <vendeg vkod=v1" >
+        <nev>Takáts Béla</nev>
+       <eletkor>21</eletkor>
+       <cim>
+       		<varos> Budapest</varos>
+        	<utca> Gazda utca</utca>
+        	<hazszam> 2</hazszam>
+       </cim>
+    	</vendeg> 
+    	
+    	   	
+    	 <vendeg vkod="v2" >
+        <nev>Farago Mihály</nev>
+       <eletkor>23</eletkor>
+       <cim>
+       		<varos> Budapest</varos>
+        	<utca> Bánk utca</utca>
+        	<hazszam> 22</hazszam>
+       </cim>
+    	</vendeg> 
+    	
+    	
+    	<rendeles e_v_e="e1" e_v_v=v1>
+    	<osszeg>5000</osszeg>
+    	<etel>Bolognai Spagetti</etel>
+    	</rendeles>
+    	
+    	 <rendeles e_v_e="e2" e_v_v=v2>
+    	<osszeg>4800</osszeg>
+    	<etel>Carbonara Spagetti</etel>
+    	</rendeles>
+    
+    
+    
+</vendeglatas>
