@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RR órarend</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+
+        h1 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+
+        .lesson {
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .lesson-title {
+            font-weight: bold;
+            color: #2980b9;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>RR órarend</h1>
+    <div id="output"></div>
+
+    <script>
+        // JSON adatok
+        const jsonData = {
+            "@noNamespaceSchemaLocation": "ZM4TLG_orarend.xsd",
+            "ora": [
+                {
+                    "@id": "01",
+                    "@típus": "Elmelet",
+                    "kurzus": "Szamitaselmelet",
+                    "idopont": {
+                        "nap": "Hetfo",
+                        "tol": "10:00",
+                        "ig": "13:00"
+                    },
+                    "helyszin": "Online",
+                    "oktato": "Dr. Veres Laura",
+                    "szak": "Programtervezo Informatikus"
+                },
+                {
+                    "@id": "02",
+                    "@típus": "Elmelet",
+                    "kurzus": "Komputergrafika és kepfeldolgozás",
+                    "idopont": {
+                        "nap": "Hetfo",
+                        "tol": "14:00",
+                        "ig": "15:30"
+                    },
+                    "helyszin": "Online",
+                    "oktato": "Fazekas Levente",
+                    "szak": "Programtervezo Informatikus"
+                },
+                {
+                    "@id": "03",
+                    "@típus": "Gyakorlat",
+                    "kurzus": "Alkalmazasok fejlesztese projektlabor II.",
+                    "idopont": {
+                        "nap": "Szerda",
+                        "tol": "10:00",
+                        "ig": "13:00"
+                    },
+                    "helyszin": "Furmint",
+                    "oktato": "Perlaki Attila",
+                    "szak": "Programtervezo Informatikus"
+                },
+                {
+                    "@id": "04",
+                    "@típus": "Gyakorlat",
+                    "kurzus": "Webkonyvtarak",
+                    "idopont": {
+                        "nap": "Szerda",
+                        "tol": "14:00",
+                        "ig": "15:25"
+                    },
+                    "helyszin": "Furmint",
+                    "oktato": "Dr. Bednarik Laszlo",
+                    "szak": "Programtervezo Informatikus"
+                },
+                {
+                    "@id": "05",
+                    "@típus": "Elmelet",
+                    "kurzus": "Halozati architekturak es protokollok",
+                    "idopont": {
+                        "nap": "Szerda",
+                        "tol": "17:00",
+                        "ig": "18:20"
+                    },
+                    "helyszin": "Furmint",
+                    "oktato": "Janics Attila",
+                    "szak": "Programtervezo Informatikus"
+                },
+                {
+                    "@id": "06",
+                    "@típus": "Elmelet",
+                    "kurzus": "Valoszinusegszamitas es statisztika",
+                    "idopont": {
+                        "nap": "Csutortok",
+                        "tol": "8:00",
+                        "ig": "11:15"
+                    },
+                    "helyszin": "Furmint",
+                    "oktato": "Foldvari Attila",
+                    "szak": "Programtervezo Informatikus"
+                },
+                {
+                    "@id": "07",
+                    "@típus": "Gyakorlat",
+                    "kurzus": "Oktatas es gamifikacio, videojatek-tanulmanyok",
+                    "idopont": {
+                        "nap": "Csutortok",
+                        "tol": "12:00",
+                        "ig": "14:35"
+                    },
+                    "helyszin": "Kabar, tantermi",
+                    "oktato": "Perlaki Attila",
+                    "szak": "Programtervezo Informatikus"
+                },
+                {
+                    "@id": "09",
+                    "@típus": "Gyakorlat",
+                    "kurzus": "Forditoprogramok",
+                    "idopont": {
+                        "nap": "Csutortok",
+                        "tol": "18:00",
+                        "ig": "19:10"
+                    },
+                    "helyszin": "Online",
+                    "oktato": "Perlaki Attila",
+                    "szak": "Programtervezo Informatikus"
+                }
+            ]
+        };
+
+        // Kimenet megjelenítése
+        const outputElement = document.getElementById('output');
+
+        // Végigmegyünk az összes órán
+        jsonData.ora.forEach(lesson => {
+            // Létrehozunk egy div elemet az óra adatainak
+            const lessonDiv = document.createElement('div');
+            lessonDiv.className = 'lesson';
+
+            // Óra neve
+            const titleElement = document.createElement('div');
+            titleElement.className = 'lesson-title';
+            titleElement.textContent = lesson.kurzus;
+            lessonDiv.appendChild(titleElement);
+
+            // Óra adatainak kiírása
+            lessonDiv.innerHTML += `
+                <div><strong>Típus:</strong> ${lesson['@típus']}</div>
+                <div><strong>Időpont:</strong> ${lesson.idopont.nap}, ${lesson.idopont.tol}-${lesson.idopont.ig}</div>
+                <div><strong>Helyszín:</strong> ${lesson.helyszin}</div>
+                <div><strong>Oktató:</strong> ${lesson.oktato}</div>
+                <div><strong>Szak:</strong> ${lesson.szak}</div>
+            `;
+
+            // Hozzáadjuk az óra elemet a kimenethez
+            outputElement.appendChild(lessonDiv);
+        });
+    </script>
+</body>
+
+</html>
