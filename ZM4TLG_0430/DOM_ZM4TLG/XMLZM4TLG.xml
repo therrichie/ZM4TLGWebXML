@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<vendeglatas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	
+	<!-- kijavitott, befejezett verzio -->
+	
+	<!-- Ettermek -->
+	<etterem ekod="e1">
+		<nev>Trofea</nev>
+		<cim>
+			<varos>Budapest</varos>
+			<utca>Kossuth utca</utca>
+			<hazszam>2</hazszam>
+		</cim>
+		<csillag>4</csillag>
+	</etterem>
+	
+	<etterem ekod="e2">
+		<nev>Gundel</nev>
+		<cim>
+			<varos>Budapest</varos>
+			<utca>Petofi utca</utca>
+			<hazszam>2</hazszam>
+		</cim>
+		<csillag>5</csillag>
+	</etterem>
+	
+	<!-- Foszakacsok -->
+	<foszakacs fkod="f1" e_f="e1">
+		<nev>Havas Péter</nev>
+		<eletkor>35</eletkor>
+		<vegzettseg>szakmai OKJ</vegzettseg>
+		<vegzettseg>Institute Paul Bosceu</vegzettseg>
+	</foszakacs>
+	
+	<foszakacs fkod="f2" e_f="e2">
+		<nev>Henrik Gábor</nev>
+		<eletkor>35</eletkor>
+		<vegzettseg>szakmai OKJ</vegzettseg>
+	</foszakacs>
+	
+	<!-- Szakacsok -->
+	<szakacs szkod="sz1" e_sz="e1">
+		<nev>Nagy Károly</nev>
+		<reszleg>desszertek</reszleg>
+		<vegzettseg>Le Cordon Bleu</vegzettseg>
+		<vegzettseg>Le Royal Cheddar</vegzettseg>
+		<vegzettseg>La Nova Andoria</vegzettseg>
+	</szakacs>
+	
+	<szakacs szkod="sz2" e_sz="e2">
+		<nev>Nagy Miklós</nev>
+		<reszleg>tesztafélék</reszleg>
+		<vegzettseg>Szakközépiskola</vegzettseg>
+		<vegzettseg>Le Cordon Bleu</vegzettseg>
+		<vegzettseg>Le Royal Cheddar</vegzettseg>
+		<vegzettseg>szakmai OKJ</vegzettseg>
+	</szakacs>
+	
+	<szakacs szkod="sz3" e_sz="e3">
+		<nev>Fazekas Antal</nev>
+		<reszleg>levesek</reszleg>
+		<vegzettseg>Szakközépsikola</vegzettseg>
+	</szakacs>
+	
+	<!-- Gyakornokok -->
+	<gyakornok gykod="gy1" e_gy="e1">
+		<nev>Kis Károly</nev>
+		<gyakorlat>
+			<kezdete>2023.02.02</kezdete>
+			<idotartama>4 hónap</idotartama>
+		</gyakorlat>
+		<muszak>Délelőtt</muszak>
+	</gyakornok>
+	
+	<gyakornok gykod="gy2" e_gy="e2">
+		<nev>Kis Mária</nev>
+		<gyakorlat>
+			<kezdete>2023.03.02</kezdete>
+			<idotartama>4 hónap</idotartama>
+		</gyakorlat>
+		<muszak>Délután</muszak>
+		<muszak>Délelőtt</muszak>
+	</gyakornok>
+	
+	<gyakornok gykod="gy3" e_gy="e1">
+		<nev>Kis Péter</nev>
+		<gyakorlat>
+			<kezdete>2023.01.01</kezdete>
+			<idotartama>3 hónap</idotartama>
+		</gyakorlat>
+		<muszak>Délután</muszak>
+	</gyakornok>
+	
+	<!-- Vendegek -->
+	<vendeg vkod="v1">
+		<nev>Takáts Béla</nev>
+		<eletkor>21</eletkor>
+		<cim>
+			<varos>Budapest</varos>
+			<utca>Gazda utca</utca>
+			<hazszam>2</hazszam>
+		</cim>
+	</vendeg>
+	
+	<vendeg vkod="v2">
+		<nev>Faragó Mihály</nev>
+		<eletkor>23</eletkor>
+		<cim>
+			<varos>Budapest</varos>
+			<utca>Bánk utca</utca>
+			<hazszam>23</hazszam>
+		</cim>
+	</vendeg>
+	
+	<vendeg vkod="v3">
+		<nev>Kenyeres Kázmér</nev>
+		<eletkor>26</eletkor>
+		<cim>
+			<varos>Budapest</varos>
+			<utca>József Attila utca</utca>
+			<hazszam>9</hazszam>
+		</cim>
+	</vendeg>
+	
+	<!-- Rendelesek -->
+	<rendeles e_v_e="e1" e_v_v="v1">
+		<osszeg>5000</osszeg>
+		<etel>Bolognai spagetti</etel>
+	</rendeles>
+	
+	<rendeles e_v_e="e2" e_v_v="v2">
+		<osszeg>8000</osszeg>
+		<etel>Rántott pacal nokedlivel</etel>
+	</rendeles>
+	
+	<rendeles e_v_e="e1" e_v_v="v3">
+		<osszeg>2500</osszeg>
+		<etel>Zsíros kenyér</etel>
+	</rendeles>
+	
+	<rendeles e_v_e="e2" e_v_v="v3">
+		<osszeg>5000</osszeg>
+		<etel>Mackósajtburger</etel>
+	</rendeles>
+	
+</vendeglatas>
